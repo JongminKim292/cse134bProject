@@ -1,0 +1,48 @@
+h1{font:lighter 5rem 'changa one', cursive;}
+h2{font:lighter 4rem 'changa one', cursive;}
+h3,h4{font-family:'itim', cursive; font-weight:bold;}
+li {list-style-type: none;}
+a:link{text-decoration: none; color: #333333}
+a:visited{text-decoration: none; color:#333333}
+a:hover{text-decoration: none; color:gray;}
+a:active{text-decoration: none; color:gray;}
+div{border:0.2em solid; box-sizing:border-box}
+section{border:0.1em solid; box-sizing: border-box;}
+#menu{font:lighter 2rem 'changa one', cursive;}
+.icon{width:3rem; position:relative; top:0.5rem}
+#contact li{font:lighter 2rem 'changa one', cursive;}
+
+@media(min-width: 1500px){
+    .container{
+        display:grid; 
+        grid-template-columns:1fr 1fr;
+    }
+    .col3container{
+        display:grid; 
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .content{
+        font-family:'itim';
+        font-size: 3rem;
+    }
+}
+.content{
+    font-family:'itim';
+    font-size: 2rem;
+}
+
+
+#ftrcontent{
+    color : gray;
+    text-align: center;
+}
+
+nav {
+    position : fixed;
+    top : 0;
+    width : 100%;
+    background-color: white;
+}
+body{
+    padding-top: 3rem;
+}
