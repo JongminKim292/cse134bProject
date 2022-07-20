@@ -1,0 +1,214 @@
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>labatory</title>
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header>
+        <nav id = "menu">
+            <table style="width:100%">
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">    
+                </colgroup>
+                <tr>
+                    <td><a href="index.html">Jongmin Kim</a></td>
+                    <td><a href="activity.html">Activity</a></td>
+                    <td><a href="contact.html">Contact</a></td>
+                    <td><a href="lab.html">Labatory</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>This page is for lab</h2>
+            <section class ="container">
+                <div>
+                    <picture>
+                        <source media="(min-width: 1800px)" srcset="./img/biggerface.jpg" width="100%">
+                        <img src="./img/face.jpg" width="100%">
+                    </picture>
+                </div>
+                <div>
+                    <iframe width="100%" height="98%" src="https://www.youtube.com/embed/gZjdAWgjLx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <aside>my favorite song</aside>
+                </div>
+            </section>
+            <section>
+                <form class = "col3container">
+                    <div>
+                        <fieldset>
+                            <legend>Verification</legend>
+                            <label for = "name">Name</label>
+                            <input type="text">
+                            <label for = "PID">PID</label>
+                            <input type="password">
+                            What is your college : <input type="text" list="colList"><br>
+                            <datalist id="colList">
+                                <option value="Earl Warren"></option>
+                                <option value="Revelle"></option>
+                                <option value="John Muir"></option>
+                                <option value="Thurgood Marshall"></option>
+                                <option value="Eleanor Roosevelt"></option>
+                                <option value="Sixth"></option>
+                            </datalist> 
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>about you</legend>
+                            <label for = "gender">Gender</label>
+                            <input type="radio" name="gender" value="M">Male
+                            <input type="radio" name="gender" value="F">Female
+                            <p>what is your favorite drink</p>
+                            <select>
+                                <optgroup label="Coffee">
+                                    <option value="americano">Americano</option>
+                                    <option value="caffe latte">Latte</option>
+                                    <option value="espresso">Espresso</option>
+                                </optgroup>
+                                <optgroup label="Tea">
+                                    <option value="green tea">Green tea</option>
+                                    <option value="herb tea">Herb tea</option>
+                                </optgroup>
+                                <optgroup label="Soda">
+                                    <option value="coke">Coke</option>
+                                    <option Value="sprite">Sprite</option>
+                                    <option Value="fanta">Fanta</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend class = content>other</legend>
+                            <label class = content for = "introduction">more about you</label><br>
+                            <textarea name="opinion" cols="100%" rows="5"></textarea><br>
+                        </fieldset>
+                    </div>
+                    <br>
+                        <input type="submit" value="Submit!">
+                </form>
+            </section>    
+               
+            <section>
+                <details>
+                    <summary class = content>Best burgur Place</summary>
+                    <ul>
+                      <li>Shake shack</li>
+                      <li>Five Guys</li>
+                      <li>In N out</li>
+                    </ul>
+                </details>
+                <button onclick="showTable()">Secret of sorting..</button>
+                <template>
+                    <code>if you find O(n)'s time complexity of sorting.. , you will win turing award </code>
+                </template>
+                
+                <table class="content" border="1" width="50%">
+                    <caption>Rate of Burger place!</caption>
+                    <colgroup>
+                        <col span="1" id= "thead">
+                        <col span="2" id= "tbody">
+                        <col span="3" id= "tfoot">
+                    </colgroup>		
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Service</th>
+                        <th>Taste</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>In n Out</th>
+                        <td>3.5/5</td>
+                        <td>5/5</td>
+                        <td rowspan="3">4.5/5</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Five guys</th>
+                        <td>4/5</td>
+                        <td>4/5</td>
+                    </tr>
+
+                    <tr>
+                        <th>Shack shake</th>
+                        <td>4.5/5</td>
+                        <td>3.5/5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">but they all nice place!</th>
+                    </tr>
+                </tfoot>
+                </table>
+                <p>Figure</p>
+                <figure>
+                    <img src="./img/baserate.png" style="max-width: 100%; height: auto;">
+                    <figcaption>Base Rate chart</figcaption>
+                </figure>
+
+                <p>Canvas</p>
+                <canvas id="myCanvas" style="border: 2px solid black">
+                    canvas will be here 
+                </canvas>
+                
+                <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var context = canvas.getContext("2d");
+                    context.fillStyle = "yellow";
+                    context.fillRect(0,0,150,100);
+                </script>
+                <p>svg</p>
+                <svg>
+                    <rect x="0" y="0" width="100" height="100"></rect>
+                </svg>
+
+            </section>
+             
+            <section>
+                <p>Audio</p>
+                <audio controls>
+                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"
+                            type='audio/mp4'>
+                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga"
+                            type='audio/ogg; codecs=vorbis'>
+                </audio>
+                <br>
+                <cite>open source by media.w3.org</cite>
+                <p>Video</p>
+                <video controls>
+                    <source src="http://media.w3.org/2010/05/sintel/trailer.mp4"
+                            type='video/mp4; codecs="avc1, mp4a"'>
+                    <source src="http://media.w3.org/2010/05/sintel/trailer.ogv"
+                            type='video/ogg; codecs="theora, vorbis"'>
+                    <p>Your user agent does not support the HTML5 Video element.</p>
+                </video>
+                <br>
+                <cite>open source by media.w3.org</cite>
+            </section>
+            
+
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p id="ftrcontent">Content of this site is under copyright by Jongmin</p>
+    </footer>
+
+</body>
+
+
+</html>
