@@ -47,7 +47,7 @@
 }
 
 /* for mobile */
-@media(max-width: 600){
+@media(max-width: 600px){
     h1{font:lighter 5rem 'changa one', cursive;}
     h2{font:lighter 4rem 'changa one', cursive;}
     h3{font:lighter 3rem 'itim', cursive; font-weight:bold;}
