@@ -3,7 +3,7 @@
 <html lang = "en">
 <head>
     <meta charset="utf-8">
-    <title>labatory</title>
+    <title>laboratory</title>
     <link href="https://fonts.googleapis.com/css?family=Changa+One|Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +21,7 @@
                     <td><a href="index.html">Jongmin Kim</a></td>
                     <td><a href="activity.html">Activity</a></td>
                     <td><a href="contact.html">Contact</a></td>
-                    <td><a href="lab.html">Labatory</a></td>
+                    <td><a href="lab.html">Laboratory</a></td>
                 </tr>
             </table>
         </nav>
@@ -33,18 +33,18 @@
             <section class ="container">
                 <div>
                     <picture>
-                        <source media="(min-width: 1800px)" srcset="./img/biggerface.jpg" width="100%">
-                        <img src="./img/face.jpg" width="100%">
+                        <source media="(min-width: 1800px)" srcset="./img/biggerface.jpg" width="100%" alt="myface">
+                        <img src="./img/face.jpg" width="100%" alt="myface">
                     </picture>
                 </div>
                 <div>
-                    <iframe width="100%" height="98%" src="https://www.youtube.com/embed/gZjdAWgjLx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="98%" src="https://www.youtube.com/embed/gZjdAWgjLx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Server is not connected!</iframe>
                     <aside>my favorite song</aside>
                 </div>
             </section>
             <section>
                 <form class = "col3container">
-                    <div>
+                    <div class = "content">
                         <fieldset>
                             <legend>Verification</legend>
                             <label for = "name">Name</label>
@@ -62,7 +62,7 @@
                             </datalist> 
                         </fieldset>
                     </div>
-                    <div>
+                    <div class="content">
                         <fieldset>
                             <legend>about you</legend>
                             <label for = "gender">Gender</label>
@@ -91,7 +91,7 @@
                         <fieldset>
                             <legend class = content>other</legend>
                             <label class = content for = "introduction">more about you</label><br>
-                            <textarea name="opinion" cols="100%" rows="5"></textarea><br>
+                            <textarea name="opinion" cols="50%" rows="5"></textarea><br>
                         </fieldset>
                     </div>
                     <br>
@@ -99,105 +99,120 @@
                 </form>
             </section>    
                
-            <section>
-                <details>
-                    <summary class = content>Best burgur Place</summary>
-                    <ul>
-                      <li>Shake shack</li>
-                      <li>Five Guys</li>
-                      <li>In N out</li>
-                    </ul>
-                </details>
-                <button onclick="showTable()">Secret of sorting..</button>
-                <template>
-                    <code>if you find O(n)'s time complexity of sorting.. , you will win turing award </code>
-                </template>
-                
-                <table class="content" border="1" width="50%">
-                    <caption>Rate of Burger place!</caption>
-                    <colgroup>
-                        <col span="1" id= "thead">
-                        <col span="2" id= "tbody">
-                        <col span="3" id= "tfoot">
-                    </colgroup>		
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Service</th>
-                        <th>Taste</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>In n Out</th>
-                        <td>3.5/5</td>
-                        <td>5/5</td>
-                        <td rowspan="3">4.5/5</td>
-                    </tr>
+            <section class = "container">
+                <div>
+                    <details>
+                        <summary class = content>Best burgur Place</summary>
+                        <ul>
+                          <li>Shake shack</li>
+                          <li>Five Guys</li>
+                          <li>In N out</li>
+                        </ul>
+                    </details>
+                    <button onclick="showTable()">Secret of sorting..</button>
+                    <template>
+                        <code>if you find O(n)'s time complexity of sorting.. , you will win turing award </code>
+                    </template>
                     
-                    <tr>
-                        <th>Five guys</th>
-                        <td>4/5</td>
-                        <td>4/5</td>
-                    </tr>
+                    <table class="content" border="1" width="50%">
+                        <caption>Rate of Burger place!</caption>
+                        <colgroup>
+                            <col span="1" id= "thead">
+                            <col span="2" id= "tbody">
+                            <col span="3" id= "tfoot">
+                        </colgroup>		
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Service</th>
+                            <th>Taste</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>In n Out</th>
+                            <td>3.5/5</td>
+                            <td>5/5</td>
+                            <td rowspan="3">4.5/5</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Five guys</th>
+                            <td>4/5</td>
+                            <td>4/5</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Shake shack</th>
+                            <td>4.5/5</td>
+                            <td>3.5/5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="4">but they're all nice place!</th>
+                        </tr>
+                    </tfoot>
+                    </table>
+     
+                </div>
+                <div>
+                    <p class="content">Figure</p>
+                    <figure>
+                        <img src="./img/baserate.png" style="max-width: 100%; height: auto;" alt="Base rate chart">
+                        <figcaption>Base Rate chart</figcaption>
+                    </figure>
 
-                    <tr>
-                        <th>Shack shake</th>
-                        <td>4.5/5</td>
-                        <td>3.5/5</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="4">but they all nice place!</th>
-                    </tr>
-                </tfoot>
-                </table>
-                <p>Figure</p>
-                <figure>
-                    <img src="./img/baserate.png" style="max-width: 100%; height: auto;">
-                    <figcaption>Base Rate chart</figcaption>
-                </figure>
+                </div>     
+            </section>
 
-                <p>Canvas</p>
-                <canvas id="myCanvas" style="border: 2px solid black">
+            <section class="container">
+                <div>
+                    <p class="content">Canvas</p>
+                    <canvas id="myCanvas" style="border: 2px solid black">
                     canvas will be here 
-                </canvas>
-                
-                <script>
-                    var canvas = document.getElementById("myCanvas");
-                    var context = canvas.getContext("2d");
-                    context.fillStyle = "yellow";
-                    context.fillRect(0,0,150,100);
-                </script>
-                <p>svg</p>
-                <svg>
-                    <rect x="0" y="0" width="100" height="100"></rect>
-                </svg>
-
+                    </canvas>
+                    <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var context = canvas.getContext("2d");
+                        context.fillStyle = "yellow";
+                        context.fillRect(0,0,150,100);
+                    </script>
+                </div>                
+                <div>
+                    <p class="content">svg</p>
+                    <svg>
+                        <rect x="0" y="0" width="100" height="100"></rect>
+                    </svg>
+                </div>
             </section>
              
-            <section>
-                <p>Audio</p>
-                <audio controls>
-                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"
-                            type='audio/mp4'>
-                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga"
-                            type='audio/ogg; codecs=vorbis'>
-                </audio>
-                <br>
-                <cite>open source by media.w3.org</cite>
-                <p>Video</p>
-                <video controls>
-                    <source src="http://media.w3.org/2010/05/sintel/trailer.mp4"
-                            type='video/mp4; codecs="avc1, mp4a"'>
-                    <source src="http://media.w3.org/2010/05/sintel/trailer.ogv"
-                            type='video/ogg; codecs="theora, vorbis"'>
-                    <p>Your user agent does not support the HTML5 Video element.</p>
-                </video>
-                <br>
-                <cite>open source by media.w3.org</cite>
+            <section class="container">
+                <div>
+                    <p class="content">Audio</p>
+                    <audio controls>
+                        <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"
+                                type='audio/mp4'>
+                        <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga"
+                                type='audio/ogg; codecs=vorbis'>
+                        <p>Your browser does not support the HTML5 Audio element.</p>
+                    </audio>
+                    <br>
+                    <cite>open source by media.w3.org</cite>
+                </div>
+                <div>
+                    <p class="content">Video</p>
+                    <video controls>
+                        <source src="http://media.w3.org/2010/05/sintel/trailer.mp4"
+                                type='video/mp4; codecs="avc1, mp4a"'>
+                        <source src="http://media.w3.org/2010/05/sintel/trailer.ogv"
+                                type='video/ogg; codecs="theora, vorbis"'>
+                        <p>Your browser does not support the HTML5 Video element.</p>
+                    </video>
+                    <br>
+                    <cite>open source by media.w3.org</cite>
+                </div>
             </section>
             
 
