@@ -1,6 +1,10 @@
 .imgs{
     width: 100%;
 }
+iframe{
+    width: 100%;
+    height: 98%;
+}
 
 /* for desktop */
 @media(min-width: 1500px){
