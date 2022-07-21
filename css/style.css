@@ -64,6 +64,38 @@ textarea{
     text-align: center;
 }
 
+.ani {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  a:link{text-decoration: none; color: #333333}
+  a:visited{text-decoration: none; color:#333333}
+  a:hover{
+    text-decoration: none; color: gray;
+    }
+  a:active{text-decoration: none; color:gray;}
+#menu td:hover{
+    transform: translateX(2rem);
+    transition-duration: 0.5s;
+    font-size: 3rem;
+}
+
+#contact li{
+    font:lighter 2rem 'changa one', cursive;
+}
+
 /* for desktop */
 @media(min-width: 1500px){
     .container{
@@ -79,24 +111,21 @@ textarea{
         font-size: 3rem;
     }
     h1{font:lighter 5rem 'changa one', cursive;}
-    h2{font:lighter 4rem 'changa one', cursive;}
+    h2{
+        font:lighter 4rem 'changa one', cursive;
+    }
     h3{font:lighter 3rem 'itim', cursive; font-weight:bold;}
     h4{font:lighter 2rem 'itim', cursive; font-weight:bold;}
     li {list-style-type: none;}
-    a:link{text-decoration: none; color: #333333}
-    a:visited{text-decoration: none; color:#333333}
-    a:hover{text-decoration: none; color:gray;}
-    a:active{text-decoration: none; color:gray;}
-    div{border:0.2em solid; box-sizing:border-box}
-    section{border:0.1em solid; box-sizing: border-box;}
-    #menu{font:lighter 2rem 'changa one', cursive;}
+    
     .icon{width:3rem; position:relative; top:0.5rem}
-    #contact li{font:lighter 2rem 'changa one', cursive;}
     #ftrcontent{
         color : gray;
         text-align: center;
     }
-
+    #menu{
+        font:lighter 2rem 'changa one', cursive;    
+    }
     nav {
         position : fixed;
         top : 0;
@@ -106,6 +135,7 @@ textarea{
     body{
         padding-top: 3rem;
     }
+
 }
 
 /* for mobile */
@@ -115,15 +145,8 @@ textarea{
     h3{font:lighter 3rem 'itim', cursive; font-weight:bold;}
     h4{font:lighter 2rem 'itim', cursive; font-weight:bold;}
     li {list-style-type: none;}
-    a:link{text-decoration: none; color: #333333}
-    a:visited{text-decoration: none; color:#333333}
-    a:hover{text-decoration: none; color:gray;}
-    a:active{text-decoration: none; color:gray;}
-    div{border:0.2em solid; box-sizing:border-box}
-    section{border:0.1em solid; box-sizing: border-box;}
     #menu{font:lighter 2rem 'changa one', cursive;}
     .icon{width:3rem; position:relative; top:0.5rem}
-    #contact li{font:lighter 2rem 'changa one', cursive;}
     .content{
         font-family:'itim', cursive;
         font-size: 2rem;
@@ -150,15 +173,8 @@ h2{font:lighter 4rem 'changa one', cursive;}
 h3{font:lighter 3rem 'itim', cursive; font-weight:bold;}
 h4{font:lighter 2rem 'itim', cursive; font-weight:bold;}
 li {list-style-type: none;}
-a:link{text-decoration: none; color: #333333}
-a:visited{text-decoration: none; color:#333333}
-a:hover{text-decoration: none; color:gray;}
-a:active{text-decoration: none; color:gray;}
-div{border:0.2em solid; box-sizing:border-box}
-section{border:0.1em solid; box-sizing: border-box;}
 #menu{font:lighter 2rem 'changa one', cursive;}
 .icon{width:3rem; position:relative; top:0.5rem}
-#contact li{font:lighter 2rem 'changa one', cursive;}
 .content{
     font-family:'itim', cursive;
     font-size: 2rem;
