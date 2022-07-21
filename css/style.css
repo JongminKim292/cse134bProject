@@ -56,6 +56,13 @@ textarea{
     width: 50%;
     height: 30%;
 }
+#tbs{
+    font-family:'itim';
+    font-size: 3rem;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
 
 /* for desktop */
 @media(min-width: 1500px){
