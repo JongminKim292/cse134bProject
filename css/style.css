@@ -56,11 +56,6 @@ textarea{
     width: 50%;
     height: 30%;
 }
-table {
-    border:0.1rem;
-    width: 50%;
-
-}
 
 /* for desktop */
 @media(min-width: 1500px){

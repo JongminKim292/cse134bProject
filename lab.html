@@ -45,9 +45,9 @@
                     <div class = "content">
                         <fieldset>
                             <legend>Verification</legend>
-                            <label for = "name">Name</label>
+                            <label>Name</label>
                             <input type="text">
-                            <label for = "PID">PID</label>
+                            <label>PID</label>
                             <input type="password">
                             <br>
                             What is your college : <input type="text" list="colList"><br>
@@ -64,7 +64,7 @@
                     <div class="content">
                         <fieldset>
                             <legend>about you</legend>
-                            <label for = "gender">Gender</label>
+                            <label>Gender</label>
                             <input type="radio" name="gender" value="M">Male
                             <input type="radio" name="gender" value="F">Female
                             <p>what is your favorite drink</p>
@@ -108,12 +108,12 @@
                           <li>In N out</li>
                         </ul>
                     </details>
-                    <button onclick="showTable()">Secret of sorting..</button>
+                    <button onclick="showContents()">Secret of sorting..</button>
                     <template>
                         <code>if you find O(n)'s time complexity of sorting.. , you will win turing award </code>
                     </template>
                     
-                    <table class="content">
+                    <table ID="tbs" class = "content">
                         <caption>Rate of Burger place!</caption>
                         <colgroup>
                             <col span="1" id= "thead">
